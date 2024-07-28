@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            background: linear-gradient(to right, #588157, #dad7cd);
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            overflow: hidden;
+            flex-direction: column;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 3em;
+            background: linear-gradient(45deg, #a3b18a, #3a5a40, #bc6c25, #bc6c25);
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: bounceIn 2s ease-out, colorChange 4s infinite;
+            text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+            margin: 0;
+        }
+
+        @keyframes bounceIn {
+            0% {
+                opacity: 0;
+                transform: scale(0.5) translateY(-100vh);
+            }
+
+            60% {
+                opacity: 1;
+                transform: scale(1.2) translateY(30px);
+            }
+
+            80% {
+                transform: scale(0.9) translateY(-10px);
+            }
+
+            100% {
+                opacity: 1;
+                transform: scale(1) translateY(0);
+            }
+        }
+
+        @keyframes colorChange {
+            0% {
+                background-position: 0% 0%;
+            }
+
+            25% {
+                background-position: 100% 0%;
+            }
+
+            50% {
+                background-position: 100% 100%;
+            }
+
+            75% {
+                background-position: 0% 100%;
+            }
+
+            100% {
+                background-position: 0% 0%;
+            }
+        }
+
+
+        .navigation-buttons {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .navigation-buttons a {
+            text-decoration: none;
+            color: #3a5a40;
+            padding: 10px 20px;
+            border: 1px solid #3a5a40;
+            border-radius: 4px;
+            background-color: white;
+            transition: background-color 0.3s;
+        }
+
+        .navigation-buttons a:hover {
+            background-color: #3a5a40;
+            color: white;
+        }
+
+
+        .gif-container {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            width: 100%;
+        }
+
+        .gif-container img {
+            width: 100%;
+            max-width: 200px;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+
+<body>
+    <h1>All set :)</h1>
+    <div class="gif-container">
+        <img src="https://media.giphy.com/media/5GoVLqeAOo6PK/giphy.gif" alt="Loading GIF">
+    </div>
+    <div class="navigation-buttons">
+        
+        <a href="index.html" >Go Back To The First Page</a>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            font-family: 'Times New Roman', Times, serif;
+            background-color: #a3b18a;
+            flex-shrink: 0;
+
+        }
+
+
+        header {
+            background-color: #344e41;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+            margin: 2%;
+            padding: 1.0rem;
+            font-size: large;
+        }
+
+
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+
+
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px;
+            transition: all 0.3s ease;
+            margin: 0 60px;
+        }
+
+        main {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            /* background-color: #f9f9f9; */
+        }
+
+        table {
+            width: 100%;
+            max-width: 600px;
+            border-collapse: collapse;
+            background-color: #dad7cd;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        th,
+        td {
+            padding: 10px;
+            border: 1px solid #dad7cd;
+            text-align: left;
+
+        }
+
+        th {
+            background-color: #3a5a40;
+            color: #dad7cd;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        td {
+            background-color: #dad7cd;
+        }
+
+        label {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 1rem;
+            color: #588157;
+            display: block;
+            margin-bottom: 0.5rem;
+            padding: 10px;
+
+        }
+
+
+        input,
+        textarea,
+        select {
+            width: 90%;
+            padding: 0.5rem;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+
+        }
+
+        h1 {
+            font-family: 'Times New Roman', Times, serif;
+            color: #344e41;
+            text-align: center;
+        }
+
+        .navigation-buttons a {
+            text-decoration: none;
+            color: #3a5a40;
+            padding: 10px 80px;
+            border: 1px solid #3a5a40;
+            border-radius: 4px;
+            background-color: white;
+            transition: background-color 0.3s;
+            text-align: center;
+            display: inline-block;
+
+        }
+
+        .navigation-buttons a:hover {
+            background-color: #3a5a40;
+            color: white;
+        }
+
+
+
+        footer {
+            background: #3a5a40;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            flex-shrink: 0;
+        }
+
+        #date,
+        #message {
+            border-color: #588157;
+            color: #588157;
+        }
+
+        textarea#message::placeholder {
+            color: #588157;
+
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h1>Contact Us</h1>
+            <form action="#" method="POST">
+                <table>
+                    <tr>
+                        <th colspan="2">Contact Form</th>
+                    </tr>
+                    <tr>
+                        <td><label for="name">Name:</label></td>
+                        <td><input type="text" id="name" name="name" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="email">Email:</label></td>
+                        <td><input type="email" id="email" name="email" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="tel">Phone Number:</label></td>
+                        <td><input type="tel" id="tel" name="tel" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="date">Select Date:</label></td>
+                        <td>
+                            <select id="date" name="date" required>
+                                <option value="" disabled selected>Select a date</option>
+                                <option value="2024-07-01">July 1, 2024</option>
+                                <option value="2024-07-02">July 2, 2024</option>
+                                <option value="2024-07-03">July 3, 2024</option>
+                                <option value="2024-07-04">July 4, 2024</option>
+                                <option value="2024-07-05">July 5, 2024</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="message">Message:</label></td>
+                        <td><textarea id="message" name="message" placeholder="Welcome, write your message here :)"
+                                rows="6" required></textarea></td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="2" style="text-align: center;">
+                            <div class="navigation-buttons">
+                                <a href="index4.html">Submit</a>
+                                <a href="menu.html">Go to Previous Page</a>
+                                <br><br>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Our Restaurant. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

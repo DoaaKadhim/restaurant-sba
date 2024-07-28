@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Menu</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background: #3a5a40;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 20px;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 10px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+
+        .menu-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .menu-section {
+            margin-bottom: 40px;
+        }
+
+        .menu-section h2 {
+            border-bottom: 2px solid #3a5a40;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+        .menu-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            padding: 10px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .menu-item img {
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            margin-right: 20px;
+        }
+
+        .menu-item p {
+            margin: 0;
+        }
+
+        .menu-item form {
+            margin-left: auto;
+        }
+
+        .navigation-buttons {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .navigation-buttons a {
+            text-decoration: none;
+            color: #3a5a40;
+            padding: 10px 20px;
+            border: 1px solid #3a5a40;
+            border-radius: 4px;
+            background-color: white;
+            transition: background-color 0.3s;
+        }
+
+        .navigation-buttons a:hover {
+            background-color: #3a5a40;
+            color: white;
+        }
+
+        footer {
+            background: #3a5a40;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .cart-icon {
+            position: absolute;
+            top: 20px;
+            right: 10px;
+            font-size: 1.5em;
+            color: white;
+            text-decoration: none;
+            align-items: center;
+        }
+
+        .cart-icon:hover {
+            color: #ffeb3b;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="falling-stars">
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+    </div>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <a href="checkout.html" class="cart-icon">🛒</a> <!-- Cart icon added here -->
+
+    </header>
+
+    <main>
+        <section>
+            <h1>Our Menu</h1>
+            <div class="menu-container">
+                <div class="menu-section appetizers">
+                    <h2>Appetizers</h2>
+                    <form action="checkout.html" method="GET">
+                        <div class="menu-item">
+                            <img src="bruschetta.jpg" alt="Bruschetta">
+                            <p>Bruschetta - 9.99$</p>
+                            <input type="hidden" name="items[]" value="Bruschetta - 9.99$">
+                            <button type="submit">Add to Cart</button>
+                        </div>
+                    </form>
+
+                    <form action="checkout.html" method="GET">
+                        <div class="menu-item">
+                            <img src="caesar-salad.jpg" alt="Caesar Salad">
+                            <p>Caesar Salad - 12.99$</p>
+                            <input type="hidden" name="items[]" value="Caesar Salad - 12.99$">
+                            <button type="submit">Add to Cart</button>
+                        </div>
+                    </form>
+
+                    <form action="checkout.html" method="GET">
+                        <div class="menu-item">
+                            <img src="greek-salad.webp" alt="Greek Salad">
+                            <p>Greek Salad - 12.99$</p>
+                            <input type="hidden" name="items[]" value="Greek Salad - 12.99$">
+                            <button type="submit">Add to Cart</button>
+                        </div>
+                    </form>
+                    <form action="checkout.html" method="GET">
+                        <div class="menu-item">
+                            <img src="tapoola-salad.jpg" alt="Tapoola Salad">
+                            <p>Tapoola Salad - 10.99$</p>
+                            <input type="hidden" name="items[]" value="Tapoola Salad - 10.99$">
+                            <button type="submit">Add to Cart</button>
+                        </div>
+                    </form>
+                    <form action="checkout.html" method="GET">
+                        <div class="menu-item">
+                            <img src="hummus-tahini.jpg" alt="Hummus Tahini">
+                            <p>Hummus Tahini - 5.99$</p>
+                            <input type="hidden" name="items[]" value="Hummus Tahini - 5.99$">
+                            <button type="submit">Add to Cart</button>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="menu-section main-courses">
+                    <h2>Main Courses</h2>
+                    <form action="checkout.html" method="GET">
+                        <div class="menu-item">
+                            <img src="pasta-carbonara.jpg" alt="Pasta Carbonara">
+                            <p>Pasta Carbonara - 15.99$</p>
+                            <input type="hidden" name="items[]" value="Pasta Carbonara - 15.99$">
+                            <button type="submit">Add to Cart</button>
+                        </div>
+                    </form>
+                    <form action="checkout.html" method="GET">
+                        <div class="menu-item">
+                            <img src="grilled-salmon.jpg" alt="Grilled Salmon">
+                            <p>Grilled Salmon - 19.99$</p>
+                            <input type="hidden" name="items[]" value="Grilled Salmon - 19.99$">
+                            <button type="submit">Add to Cart</button>
+                        </div>
+                    </form>
+                    <form action="checkout.html" method="GET">
+                        <div class="menu-item">
+                            <img src="chicken-marsala.jpg" alt="Chicken Marsala">
+                            <p>Chicken Marsala - 20.99$</p>
+                            <input type="hidden" name="items[]" value="Chicken Marsala - 20.99$">
+                            <button type="submit">Add to Cart</button>
+                        </div>
+                    </form>
+                    <form action="checkout.html" method="GET">
+                        <div class="menu-item">
+                            <img src="newyork-steak.jpg" alt="New York Steak">
+                            <p>New York Steak - 35.99$</p>
+                            <input type="hidden" name="items[]" value="New York Steak - 35.99$">
+                            <button type="submit">Add to Cart</button>
+                        </div>
+                    </form>
+                    <form action="checkout.html" method="GET">
+                        <div class="menu-item">
+                            <img src="pasta-carbonara.jpg" alt="Pasta Carbonara">
+                            <p>Pasta Carbonara - 20.99$</p>
+                            <input type="hidden" name="items[]" value="New York Steak - 35.99$">
+                            <button type="submit">Add to Cart</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+
+            <div class="navigation-buttons">
+                <a href="index.html" class="back">Go to Previous Page</a>
+                <a href="checkout.html" class="next">Go to Next Page</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Our Restaurant. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
